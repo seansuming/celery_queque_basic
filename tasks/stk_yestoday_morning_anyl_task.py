@@ -1,0 +1,5 @@
+# -- coding: utf-8 --
+__author__ = 'Sean'
+
+class Task():
+    pass

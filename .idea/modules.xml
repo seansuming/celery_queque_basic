@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/celery_queque_basic.iml" filepath="$PROJECT_DIR$/.idea/celery_queque_basic.iml" />
+      <module fileurl="file://$USER_HOME$/360yunpan/workspace/pycharm_workspace_py/plugin_frame/.idea/plugin_frame.iml" filepath="$USER_HOME$/360yunpan/workspace/pycharm_workspace_py/plugin_frame/.idea/plugin_frame.iml" />
+    </modules>
+  </component>
+</project>
