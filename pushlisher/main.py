@@ -2,7 +2,7 @@
 __author__ = 'Sean'
 
 from celery import Celery
-from conf.celery import CeleryConf
+from conf.celeryconfig import CeleryConf
 from tasks.stk_today_anyl_task import AnylTask
 
 
