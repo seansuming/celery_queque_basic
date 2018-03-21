@@ -7,7 +7,7 @@ result_serializer = 'json'
 
 
 broker_url = "redis://:hellboy@103.235.232.114/0"
-backend='redis://:hellboy@103.235.232.114/1'
+# backend_url='redis://:hellboy@103.235.232.114/1'
 
 task_queues = (
     Queue('priority_low',  exchange=Exchange('priority', type='direct'), routing_key='priority_low'),

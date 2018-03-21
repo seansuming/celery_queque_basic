@@ -8,7 +8,7 @@ import sys
 
 sys.path.append('../conf/')
 
-app = Celery('tasks')
+app = Celery('tasks',backend='redis://:hellboy@103.235.232.114/0')
 app.config_from_object('celeryconfig')
 
 class CallbackTask(Task):
@@ -16,7 +16,8 @@ class CallbackTask(Task):
         print "----%s is done" % task_id
 
     def on_failure(self, exc, task_id, args, kwargs, einfo):
-        pass
+        print "----%s is failure" % task_id
+        # pass
 
 @app.task(base=CallbackTask)
 def add(x, y):
