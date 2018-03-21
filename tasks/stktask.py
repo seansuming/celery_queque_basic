@@ -5,11 +5,13 @@ from kombu import Queue
 import time
 from celery import Task
 import sys
+from conf import celeryconfig
 
 sys.path.append('../conf/')
 
 app = Celery('stktask',backend='redis://:hellboy@103.235.232.114/0',broker='redis://:hellboy@103.235.232.114/0')
-# app.config_from_object('celeryconfig')
+#app.config_from_object(celeryconfig)
+
 
 class CallbackTask(Task):
     def on_success(self, retval, task_id, args, kwargs):
@@ -19,11 +21,11 @@ class CallbackTask(Task):
         print "----%s is failure" % task_id
         # pass
 
-@app.task
+@app.task(base=CallbackTask)
 def add(x, y):
     return x + y
 
 
-@app.task
+@app.task(base=CallbackTask)
 def multiply(x,y):
     return x * y

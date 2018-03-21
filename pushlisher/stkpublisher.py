@@ -11,5 +11,5 @@ for i in xrange(50):
 
     res=multiply.delay(10,10)
     time.sleep(1)
-    print res.ready()
-
+    print res.get(1)
+#
