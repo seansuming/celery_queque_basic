@@ -6,6 +6,7 @@ import time
 from celery import Task
 import sys
 from conf import celeryconfig
+from tasks.modules.stock.plugin_stock import PluginStock
 
 sys.path.append('../conf/')
 
@@ -22,10 +23,12 @@ class CallbackTask(Task):
         # pass
 
 @app.task(base=CallbackTask)
-def add(x, y):
-    return x + y
+def stock(t,c):
+    stk=PluginStock()
+    stk.set_param(t,c)
+    return stk.anyl_dadan_zhanbi()
 
 
-@app.task(base=CallbackTask)
-def multiply(x,y):
-    return x * y
+# @app.task(base=CallbackTask)
+# def multiply(x,y):
+#     return x * y
