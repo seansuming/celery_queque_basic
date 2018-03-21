@@ -63,6 +63,7 @@ class PluginStock():
             print ('date=%s,code=%s,liuruzhanbi=%s' %(str(self._time_start),str(code),str(liuruzhanbi)))
                 # print ('date=%s,code=%s,zhangfu=%s,jinliuru=%s' %(str(days[i]),str(self._codes[0]),str(secdayzhangfu),str(jinliuru)))
         print matchs
+        return matchs
 
             # for code in self._codes:
             #     print code

@@ -1,0 +1,3 @@
+apt-get install -y libxml2-dev libxslt1-dev zlib1g-dev
+pip install lxml
+pip install bs4
