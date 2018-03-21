@@ -57,7 +57,7 @@ class PluginStock():
             liuruzhanbi=jinliuru/chengjiaoliang
 
             # p_change=(df.price-df.open[0])/df.open[0]
-            if liuruzhanbi<0.0:
+            if liuruzhanbi<self._zhanbi:
                 print liuruzhanbi
                 continue
 
