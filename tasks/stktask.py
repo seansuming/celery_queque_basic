@@ -30,9 +30,9 @@ class CallbackTask(Task):
         # pass
 
 @app.task(base=CallbackTask)
-def stock(t,c):
+def stock(t,c,v=400,z=0.0):
     stk=PluginStock()
-    stk.set_param(t,c)
+    stk.set_param(t,c,v,z)
     result= stk.anyl_dadan_zhanbi()
     print result
     if result and (not len(result)==0):
