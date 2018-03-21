@@ -34,6 +34,7 @@ def stock(t,c):
     stk=PluginStock()
     stk.set_param(t,c)
     result= stk.anyl_dadan_zhanbi()
+    print result
     if result and (not len(result)==0):
         r = redis.Redis(host='103.235.232.114', port=6379, decode_responses=True,password='hellboy')
         r.lpush(t,c)

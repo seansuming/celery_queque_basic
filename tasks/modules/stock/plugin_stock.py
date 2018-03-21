@@ -12,11 +12,13 @@ class PluginStock():
     def __init__(self):
         pass
 
-    def set_param(self, time_start, codes):
+    def set_param(self, time_start, codes,maxval=400,zhanbi=0.0):
         # d=ts.get_stock_basics()
         self._time_start = time_start
         # self._time_end = time_end
         # d=ts.get_stock_basics()
+        self._maxval=maxval
+        self._zhanbi=zhanbi
         if isinstance(codes,list):
             self._codes = codes
         else:
@@ -30,7 +32,7 @@ class PluginStock():
                 continue
             j+=1
             print ('%d/%d current=%s' %(j,len(self._codes),code))
-            ds = ts.get_sina_dd(code=code, date=self._time_start,vol=400)
+            ds = ts.get_sina_dd(code=code, date=self._time_start,vol=self._maxval)
                 # ds['total']=ds.price*ds.volume
                 # maipantol=ds[ds.type=='买盘'].total.sum()
                 # maipan1tol=ds[ds.type=='卖盘'].total.sum()
@@ -55,7 +57,7 @@ class PluginStock():
             liuruzhanbi=jinliuru/chengjiaoliang
 
             # p_change=(df.price-df.open[0])/df.open[0]
-            if liuruzhanbi<0.30:
+            if liuruzhanbi<0.0:
                 print liuruzhanbi
                 continue
 
