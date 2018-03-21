@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6f7f2fb3-fecd-405a-927a-a439adb13a63" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pushlisher/main.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tasks/stk_today_anyl_task.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tasks/stk_yestoday_morning_anyl_task.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/worker/backend/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/worker/backend/resbackend.py" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pushlisher/stkpublisher.py" afterPath="$PROJECT_DIR$/pushlisher/stkpublisher.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tasks/stktask.py" afterPath="$PROJECT_DIR$/tasks/stktask.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tasks/modules/stock/plugin_stock.py" afterPath="$PROJECT_DIR$/tasks/modules/stock/plugin_stock.py" />
     </list>
     <ignored path="celery_queque_basic.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -71,11 +64,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="plugin_stock.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="plugin_stock.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tasks/modules/stock/plugin_stock.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.2">
-              <caret line="29" column="31" selection-start-line="29" selection-start-column="31" selection-end-line="29" selection-end-column="31" />
+            <state vertical-scroll-proportion="0.13171577">
+              <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -111,10 +104,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="stkpublisher.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="stkpublisher.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pushlisher/stkpublisher.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.46952224">
+            <state vertical-scroll-proportion="0.0">
               <caret line="15" column="19" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
               <folding />
             </state>
@@ -149,8 +142,8 @@
         <option value="$PROJECT_DIR$/worker/stkworker.sh" />
         <option value="$PROJECT_DIR$/tasks/modules/stock/PluginStock.py" />
         <option value="$PROJECT_DIR$/tasks/stktask.py" />
-        <option value="$PROJECT_DIR$/tasks/modules/stock/plugin_stock.py" />
         <option value="$PROJECT_DIR$/pushlisher/stkpublisher.py" />
+        <option value="$PROJECT_DIR$/tasks/modules/stock/plugin_stock.py" />
       </list>
     </option>
   </component>
@@ -794,26 +787,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/worker/stkworker.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="34" selection-start-line="0" selection-start-column="34" selection-end-line="0" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../python/plugin_frame/plugins/PluginStock.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="19" column="21" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tasks/modules/stock/plugin_stock.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.2">
-          <caret line="29" column="31" selection-start-line="29" selection-start-column="31" selection-end-line="29" selection-end-column="31" />
           <folding />
         </state>
       </provider>
@@ -830,8 +807,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pushlisher/stkpublisher.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.46952224">
+        <state vertical-scroll-proportion="0.0">
           <caret line="15" column="19" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/worker/stkworker.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="34" selection-start-line="0" selection-start-column="34" selection-end-line="0" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tasks/modules/stock/plugin_stock.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.13171577">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
           <folding />
         </state>
       </provider>

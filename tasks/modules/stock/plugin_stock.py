@@ -1,15 +1,6 @@
 # -- coding: utf-8 --
 __author__ = 'Sean'
-
-
-
-from manager.plugin_manager import ModelStockTest
-from manager.plugin_manager import ModelStockSimple
 import tushare as ts
-from utils.stock import StockUtil
-from datetime import datetime
-from pandas import DataFrame
-import numpy
 import time
 
 import sys
