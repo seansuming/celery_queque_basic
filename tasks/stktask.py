@@ -9,7 +9,7 @@ import sys
 sys.path.append('../conf/')
 
 app = Celery('tasks',backend='redis://:hellboy@103.235.232.114/0',broker='redis://:hellboy@103.235.232.114/0')
-app.config_from_object('celeryconfig')
+# app.config_from_object('celeryconfig')
 
 class CallbackTask(Task):
     def on_success(self, retval, task_id, args, kwargs):
