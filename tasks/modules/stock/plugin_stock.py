@@ -31,7 +31,16 @@ class PluginStock():
             if code.startswith('300'):
                 continue
             j+=1
-            print ('%d/%d current=%s' %(j,len(self._codes),code))
+            df=ts.get_realtime_quotes(code)
+                # keys=numpy.array(df.volume.keys).tolist()
+                # if not days[i] in keys:
+                #     continue
+            if 0 not in df.volume:
+                continue
+
+            chengjiaoliang=float(df.volume[0])
+            self._maxval=int(chengjiaoliang*0.005)
+            # print ('%d/%d current=%s' %(j,len(self._codes),code))
             ds = ts.get_sina_dd(code=code, date=self._time_start,vol=self._maxval)
                 # ds['total']=ds.price*ds.volume
                 # maipantol=ds[ds.type=='买盘'].total.sum()
@@ -44,14 +53,7 @@ class PluginStock():
 
             # df= ts.get_hist_data(code=code,start=self._time_start,end=self._time_start)
             time.sleep(1)
-            df=ts.get_realtime_quotes(code)
-                # keys=numpy.array(df.volume.keys).tolist()
-                # if not days[i] in keys:
-                #     continue
-            if 0 not in df.volume:
-                continue
 
-            chengjiaoliang=float(df.volume[0])
             if jinliuru==0.0 or chengjiaoliang==0.0:
                 continue
             liuruzhanbi=jinliuru/chengjiaoliang
