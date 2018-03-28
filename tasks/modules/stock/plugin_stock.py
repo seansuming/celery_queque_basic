@@ -37,9 +37,12 @@ class PluginStock():
                 #     continue
             if 0 not in df.volume:
                 continue
-
-            chengjiaoliang=float(df.volume[0])
-            self._maxval=int(chengjiaoliang*0.005)
+            chengjiaoliang=0
+            if self._maxval<=0:
+                chengjiaoliang=float(df.volume[0])
+                self._maxval=int(chengjiaoliang*0.00005)
+            print self._maxval
+            print '-----------------------'
             # print ('%d/%d current=%s' %(j,len(self._codes),code))
             ds = ts.get_sina_dd(code=code, date=self._time_start,vol=self._maxval)
                 # ds['total']=ds.price*ds.volume

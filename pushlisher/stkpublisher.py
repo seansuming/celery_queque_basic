@@ -20,7 +20,7 @@ if __name__ == '__main__':
         # time.sleep(1)
         # print res.ready()
 
-        res=stktask.stock.delay(today,i,400,0.40)
+        res=stktask.stock.delay(today,i,400,-0.10)
         # time.sleep(1)
         # print res.get(1)
     #
