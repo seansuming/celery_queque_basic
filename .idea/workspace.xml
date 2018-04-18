@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6f7f2fb3-fecd-405a-927a-a439adb13a63" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tasks/stktask.py" afterPath="$PROJECT_DIR$/tasks/stktask.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tasks/modules/stock/plugin_stock.py" afterPath="$PROJECT_DIR$/tasks/modules/stock/plugin_stock.py" />
     </list>
     <ignored path="celery_queque_basic.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,11 +30,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="stktask.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="stktask.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tasks/stktask.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.71938777">
-              <caret line="43" column="12" selection-start-line="43" selection-start-column="12" selection-end-line="43" selection-end-column="12" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="41" column="35" selection-start-line="41" selection-start-column="35" selection-end-line="41" selection-end-column="35" />
               <folding>
                 <element signature="e#43#68#0" expanded="true" />
                 <marker date="1524033101157" expanded="true" signature="1202:1261" placeholder="INSERT INTO rizhanbi... " />
@@ -63,11 +63,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="plugin_stock.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="plugin_stock.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tasks/modules/stock/plugin_stock.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="71" column="19" selection-start-line="71" selection-start-column="14" selection-end-line="71" selection-end-column="19" />
+            <state vertical-scroll-proportion="0.6122449">
+              <caret line="69" column="47" selection-start-line="69" selection-start-column="47" selection-end-line="69" selection-end-column="47" />
               <folding>
                 <element signature="e#42#62#0" expanded="true" />
               </folding>
@@ -166,8 +166,8 @@
         <option value="$PROJECT_DIR$/pushlisher/stkpublisher.py" />
         <option value="$PROJECT_DIR$/tt.py" />
         <option value="$PROJECT_DIR$/doc/sql" />
-        <option value="$PROJECT_DIR$/tasks/modules/stock/plugin_stock.py" />
         <option value="$PROJECT_DIR$/tasks/stktask.py" />
+        <option value="$PROJECT_DIR$/tasks/modules/stock/plugin_stock.py" />
       </list>
     </option>
   </component>
@@ -1102,23 +1102,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tasks/modules/stock/plugin_stock.py">
+    <entry file="file://$PROJECT_DIR$/tasks/stktask.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="71" column="19" selection-start-line="71" selection-start-column="14" selection-end-line="71" selection-end-column="19" />
+          <caret line="41" column="35" selection-start-line="41" selection-start-column="35" selection-end-line="41" selection-end-column="35" />
           <folding>
-            <element signature="e#42#62#0" expanded="true" />
+            <element signature="e#43#68#0" expanded="true" />
+            <marker date="1524033101157" expanded="true" signature="1202:1261" placeholder="INSERT INTO rizhanbi... " />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tasks/stktask.py">
+    <entry file="file://$PROJECT_DIR$/tasks/modules/stock/plugin_stock.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.71938777">
-          <caret line="43" column="12" selection-start-line="43" selection-start-column="12" selection-end-line="43" selection-end-column="12" />
+        <state vertical-scroll-proportion="0.6122449">
+          <caret line="69" column="47" selection-start-line="69" selection-start-column="47" selection-end-line="69" selection-end-column="47" />
           <folding>
-            <element signature="e#43#68#0" expanded="true" />
-            <marker date="1524033101157" expanded="true" signature="1202:1261" placeholder="INSERT INTO rizhanbi... " />
+            <element signature="e#42#62#0" expanded="true" />
           </folding>
         </state>
       </provider>

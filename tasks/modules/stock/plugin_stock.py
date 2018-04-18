@@ -68,7 +68,7 @@ class PluginStock():
             #     print liuruzhanbi
             #     continue
             # code_zhanbi['zhanbi']=liuruzhanbi
-            matchs.append((code,liuruzhanbi,time.asctime(time.localtime(time.time()))))
+            matchs.append((code,liuruzhanbi,self._time_start))
             # print ('date=%s,code=%s,liuruzhanbi=%s' %(str(self._time_start),str(code),str(liuruzhanbi)))
                 # print ('date=%s,code=%s,zhangfu=%s,jinliuru=%s' %(str(days[i]),str(self._codes[0]),str(secdayzhangfu),str(jinliuru)))
         # print matchs
