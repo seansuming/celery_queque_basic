@@ -5,6 +5,7 @@ import time
 import tushare as ts
 import redis
 
+
 if __name__ == '__main__':
     today=time.strftime('%Y-%m-%d',time.localtime(time.time()))
     r = redis.Redis(host='103.235.232.114', port=6379, decode_responses=True,password='hellboy')
@@ -20,7 +21,7 @@ if __name__ == '__main__':
         # time.sleep(1)
         # print res.ready()
 
-        res=stktask.stock.delay(today,i,400,-0.10)
+        res=stktask.stock.delay(today,i,0,0.50)
         # time.sleep(1)
         # print res.get(1)
     #

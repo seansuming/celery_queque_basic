@@ -28,8 +28,10 @@ class PluginStock():
         matchs=[]
         j=0
         for code in self._codes:
-            if code.startswith('300'):
-                continue
+            # if code.startswith('300'):
+            #     continue
+            # code_zhanbi=()
+            # code_zhanbi['code']=code
             j+=1
             df=ts.get_realtime_quotes(code)
                 # keys=numpy.array(df.volume.keys).tolist()
@@ -62,14 +64,14 @@ class PluginStock():
             liuruzhanbi=jinliuru/chengjiaoliang
 
             # p_change=(df.price-df.open[0])/df.open[0]
-            if liuruzhanbi<self._zhanbi:
-                print liuruzhanbi
-                continue
-
-            matchs.append(code)
-            print ('date=%s,code=%s,liuruzhanbi=%s' %(str(self._time_start),str(code),str(liuruzhanbi)))
+            # if liuruzhanbi<self._zhanbi:
+            #     print liuruzhanbi
+            #     continue
+            # code_zhanbi['zhanbi']=liuruzhanbi
+            matchs.append((code,liuruzhanbi,time.asctime(time.localtime(time.time()))))
+            # print ('date=%s,code=%s,liuruzhanbi=%s' %(str(self._time_start),str(code),str(liuruzhanbi)))
                 # print ('date=%s,code=%s,zhangfu=%s,jinliuru=%s' %(str(days[i]),str(self._codes[0]),str(secdayzhangfu),str(jinliuru)))
-        print matchs
+        # print matchs
         return matchs
 
             # for code in self._codes:

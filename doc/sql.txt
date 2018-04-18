@@ -1,0 +1,6 @@
+CREATE TABLE `stock`.`rizhanbi` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `code` VARCHAR(20) NOT NULL,
+  `zhanbi` DECIMAL(5,2) NOT NULL,
+  `timedate` DATETIME NOT NULL,
+  PRIMARY KEY (`id`));

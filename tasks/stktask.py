@@ -9,7 +9,8 @@ import sys
 from conf import celeryconfig
 from tasks.modules.stock.plugin_stock import PluginStock
 import redis
-
+from pymysql import cursors
+from pymysql import Connect
 
 # sys.path.append('../conf/')
 
@@ -33,11 +34,18 @@ class CallbackTask(Task):
 def stock(t,c,v=400,z=0.0):
     stk=PluginStock()
     stk.set_param(t,c,v,z)
-    result= stk.anyl_dadan_zhanbi()
-    print result
-    if result and (not len(result)==0):
-        r = redis.Redis(host='103.235.232.114', port=6379, decode_responses=True,password='hellboy')
-        r.lpush(t,c)
+    results= stk.anyl_dadan_zhanbi()
+    connection = Connect(host='103.235.232.114', port=3306, user='stock', password='HellBoy1980', db='stock',
+                             charset='utf8mb4', cursorclass=cursors.DictCursor)
+    cursor = connection.cursor()
+    sql = "INSERT INTO 'rizhanbi' ('code', 'zhanbi','timedate')values(%s,%s,%s)"
+    cursor.executemany(sql,results)
+    connection.commit()
+    connection.close()
+
+    # if result and (not len(result)==0):
+    #     r = redis.Redis(host='103.235.232.114', port=6379, decode_responses=True,password='hellboy')
+    #     r.lpush(t,c)
 
 # @app.task(base=CallbackTask)
 # def multiply(x,y):
