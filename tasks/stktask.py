@@ -38,7 +38,7 @@ def stock(t,c,v=400,z=0.0):
     connection = Connect(host='103.235.232.114', port=3306, user='stock', password='HellBoy1980', db='stock',
                              charset='utf8mb4', cursorclass=cursors.DictCursor)
     cursor = connection.cursor()
-    sql = "INSERT INTO 'rizhanbi' ('code', 'zhanbi','timedate')values(%s,%s,%s)"
+    sql = "INSERT INTO rizhanbi(code,zhanbi,timedate) values(%s,%s,%s)"
     cursor.executemany(sql,results)
     connection.commit()
     connection.close()
